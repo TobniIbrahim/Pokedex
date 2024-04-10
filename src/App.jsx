@@ -1,4 +1,4 @@
-import PokemonCard from "./PokemonCard";
+import PokemonCard from "./compenents/PokemonCard";
 
 import "./App.css";
 
@@ -9,3 +9,4 @@ function App() {
     </div>
   );
 }
+export default App
