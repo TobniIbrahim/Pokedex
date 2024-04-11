@@ -1,5 +1,5 @@
 function PokemonCard() {
-    const pokemon = pokemonList[0];
+    const pokemon = pokemonList[0,1];
     return (
         <div className="pokemon-card">
         <h2>{pokemon.name}</h2>
