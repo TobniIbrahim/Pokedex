@@ -1,12 +1,24 @@
-import PokemonCard from "./compenents/PokemonCard";
+import React from "react";
+import PokemonCard from "./PokemonCard";
 
-import "./App.css";
+const pokemonList = [
+  {
+    name: "bulbasaur",
+    imgSrc:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
+  },
+  {
+    name: "mew",
+  },
+];
 
 function App() {
   return (
-    <div>
-      <PokemonCard />
+    <div className="app">
+      <PokemonCard pokemon={pokemonList[0]} />
+      <PokemonCard pokemon={pokemonList[1]} />
     </div>
   );
 }
-export default App
+
+export default App;
